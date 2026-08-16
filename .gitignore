@@ -1,0 +1,7 @@
+data/fp_matrix.npy
+checkpoints/model_rf_classifier.pkl
+checkpoints/model_rf_ligand_protein.pkl
+checkpoints/model_rf_regressor.pkl
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
