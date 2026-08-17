@@ -292,7 +292,7 @@ To move past the bottleneck of current ligand-only QSAR models, this project lay
 - Anthropic's Claude AI
 
 **Bibliography:**
-1. hERG K+ Channels: Structure, Function, and Clinical Significance | Physiological Reviews | American Physiological Society. *Physiological Reviews*.
+1. Vandenberg, J. I., Perry, M. D., Perrin, M. J., Mann, S. A., Ke, Y., & Hill, A. P. (2012). hERG K(+) channels: structure, function, and clinical significance. Physiological reviews, 92(3), 1393–1478. https://doi.org/10.1152/physrev.00036.2011
 2. Syahdi, R. R.; Jasial, S.; Maeda, I.; Miyao, T. Bridging Structure- and Ligand-Based Virtual Screening through Fragmented Interaction Fingerprint. *ACS Omega* 2024, 9 (37), 38957–38969. https://doi.org/10.1021/acsomega.4c05433.
 3. Siramshetty, V. B.; Nguyen, D.-T.; Martinez, N. J.; Southall, N. T.; Simeonov, A.; Zakharov, A. V. Critical Assessment of Artificial Intelligence Methods for Prediction of hERG Channel Inhibition in the "Big Data" Era. *J. Chem. Inf. Model.* 2020, 60 (12), 6007–6019. https://doi.org/10.1021/acs.jcim.0c00884.
 4. Kalyaanamoorthy, S.; Barakat, K. H. Development of Safe Drugs: The hERG Challenge. *Medicinal Research Reviews* 2018, 38 (2), 525–555. https://doi.org/10.1002/med.21445.
