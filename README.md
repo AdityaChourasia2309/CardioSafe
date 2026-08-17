@@ -219,7 +219,6 @@ model.predict_proba(X)  # X must be generated the same way as in 03_split_featur
 ---
 
 ## Key Metrics & Results
-
 **Dataset Overview:**
 - Total unique compounds: 16,159
 - Blockers: 9,000 (55.7%)
@@ -243,12 +242,12 @@ model.predict_proba(X)  # X must be generated the same way as in 03_split_featur
 ### Methodology Validation: Scaffold vs. Random Split
 - **Random split (easier, inflated):** Accuracy 0.814, ROC-AUC 0.900
 - **Scaffold split (honest evaluation):** Accuracy 0.777, ROC-AUC 0.865
-- *Diagnostic Conclusion:* the scaffold split is genuinely harder — random splitting inflated accuracy by ~4 points.
+- *Diagnostic Conclusion:* the scaffold split is genuinely harder random splitting inflated accuracy by ~4 points.
 
 ### Applicability Domain (Confidence Validation)
 - **In-domain (high confidence, n=2,943):** Accuracy 0.790, ROC-AUC 0.876
 - **Out-of-domain (low confidence, n=350):** Accuracy 0.660, ROC-AUC 0.736
-- *Conclusion:* compounds similar to training data were predicted with 79% accuracy, while structurally novel compounds dropped to 66% accuracy — a validated, actionable confidence signal.
+- *Conclusion:* compounds similar to training data were predicted with 79% accuracy, while structurally novel compounds dropped to 66% accuracy, a validated, actionable confidence signal.
 
 ### SHAP Interpretability
 - **Top drivers:** TPSA, LogP, and hydrogen bond acceptors
