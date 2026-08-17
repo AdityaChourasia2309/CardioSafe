@@ -23,7 +23,7 @@ herg-blocker-prediction/
 ├── README.md
 ├── requirements.txt
 ├── submission.csv
-├── model_code/
+├── model_codes/
 │   ├── 01_fetch_data.ipynb
 │   ├── 02_curate.ipynb
 │   ├── 03_split_featurize.ipynb
@@ -128,7 +128,7 @@ then **restart the Python kernel/runtime** before importing anything further.
 
 ## How To Run
 
-Run the following notebooks from `model_code/`, in order, from the repository root. Each notebook depends on outputs from the previous one.
+Run the following notebooks from `model_codes/`, in order, from the repository root. Each notebook depends on outputs from the previous one.
 
 ### 1. Fetch data
 
@@ -166,8 +166,8 @@ Expected outputs:
 
 ### 4. Train baseline models
 
-model_code/04a_baseline_models.ipynb
-model_code/04b_baseline_models.ipynb
+model_codes/04a_baseline_models.ipynb
+model_codes/04b_baseline_models.ipynb
 
 Trains Logistic Regression, Random Forest (classifier + regressor), and XGBoost. Runs SHAP interpretability analysis. Integrates hERG protein sequence (UniProt Q12809) features alongside ligand features. Checks raw data for known hERG mutant variants. Takes ~10–15 minutes.
 
@@ -184,7 +184,7 @@ Expected outputs:
 
 ### 5. Applicability domain / confidence scoring
 
-model_code/05_applicability_domain.ipynb
+model_codes/05_applicability_domain.ipynb
 
 Computes each test compound's maximum Tanimoto similarity to the training set, validates it as a meaningful confidence signal by comparing in-domain vs out-of-domain accuracy. Takes ~2–5 minutes.
 
@@ -195,12 +195,12 @@ Expected outputs:
 
 ### Required Execution Order
 
-model_code/01_fetch_data.ipynb
-model_code/02_curate.ipynb
-model_code/03_split_featurize.ipynb
-model_code/04a_baseline_models.ipynb
-model_code/04b_baseline_models.ipynb
-model_code/05_applicability_domain.ipynb
+model_codes/01_fetch_data.ipynb
+model_codes/02_curate.ipynb
+model_codes/03_split_featurize.ipynb
+model_codes/04a_baseline_models.ipynb
+model_codes/04b_baseline_models.ipynb
+model_codes/05_applicability_domain.ipynb
 
 
 **Configuration:** Each notebook defines a working directory via the `SAVE_DIR` variable near the top of the file (e.g. `SAVE_DIR = '/content/drive/MyDrive/herg_hackathon'`), currently configured for the authors' Google Drive environment. Update this single variable to your own path before running each notebook.
