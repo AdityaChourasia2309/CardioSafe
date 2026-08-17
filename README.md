@@ -38,7 +38,7 @@ herg-blocker-prediction/
 │   └── model_xgboost.pkl
 ├── reports/
 │   ├── data_curation_report.md
-│   ├── exploration_report.md
+│   ├── Exploration_Report.pdf
 │   ├── herg_variant_subset.csv
 │   ├── data_summary_plots.png
 │   ├── shap_summary_plot.png
