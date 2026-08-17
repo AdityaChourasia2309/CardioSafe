@@ -132,7 +132,7 @@ Run the following notebooks from `model_codes/`, in order, from the repository r
 
 ### 1. Fetch data
 
-model_code/01_fetch_data.ipynb
+model_codes/01_fetch_data.ipynb
 
 Requires internet access. Takes ~3–5 minutes.
 
@@ -141,7 +141,7 @@ Expected outputs:
 
 ### 2. Curate and clean
 
-model_code/02_curate.ipynb
+model_codes/02_curate.ipynb
 
 Canonicalizes SMILES via RDKit, converts IC50 → pIC50, derives binary blocker labels (pIC50 ≥ 5.0), deduplicates on canonical SMILES.
 
@@ -154,7 +154,7 @@ The script also prints explicit counts at every filtering step: raw records in, 
 
 ### 3. Split and featurize
 
-model_code/03_split_featurize.ipynb
+model_codes/03_split_featurize.ipynb
 
 Creates the primary scaffold-based 80/20 train/test split (Murcko scaffolds), generates ECFP4 fingerprints (2048-bit) and 8 physicochemical descriptors. Also runs a diagnostic random-split comparison to quantify how much easier random splitting makes evaluation. Takes ~2–3 minutes.
 
